@@ -1,0 +1,156 @@
+/*awal all*/
+h1, h2, h3, p, a, span, select {
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+}
+
+h1 {
+	font-size: 140px;
+
+
+}
+
+h2 {
+	font-size: 70px;
+	font-weight: 600;
+	color: #FFFFFF;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+p {
+	font-size: 17px;
+
+}
+
+a {
+	text-decoration: none;
+	font-size: 20px;
+}
+
+span {
+	text-decoration: none;
+	font-size: 20px;
+}
+
+
+body {
+	background-color: #333646;
+}
+
+@media all and (max-width: 767px) {
+	h1{
+		font-size: 110px;
+	}
+
+	h2{
+		font-size: 55px;
+	}
+
+	h3{
+		font-size: 18px;
+	}
+
+	p{
+		font-size: 16px;
+	}
+}
+
+
+.more {
+	transition: 0.15s;
+}
+
+.more a {
+	color: #FFC25C;
+}
+
+.more:hover {
+	transform: scale(1.2);
+}
+
+
+.line {
+	background-color: #FFC25C;
+
+}
+
+
+/*akhir all*/
+
+
+
+/*awal navbar*/
+.navbar{
+	background-color: #252734;
+}
+
+.logo h3 {
+	color: #FFF;
+	font-weight: 600;
+}
+.qa {
+	background-color: #252734;
+}
+
+.qabutton {
+	color: #FFF;
+
+	transition: 0.15s;
+}
+
+.qabutton:hover {
+	transform: scale(1.3);
+}
+
+
+.qa .themeButton {
+	background-color: #20222D;
+}
+
+select {
+	background-color:#20222D;
+	border: 0px solid #20222D;
+}
+
+/*akhir navbar*/
+
+
+
+/*service bar*/
+
+.service {
+	background-color: #252734;
+}
+
+.skillbox {
+	transition: 0.3s;
+}
+
+.skillbox h1, .skillbox h3 {
+	color:#FFC25C;
+}
+
+
+.skillbox:hover{
+	transform: scale(1.2);
+}
+
+/*akhir service bar*/
+
+
+/*awal my work*/
+/*akhir my work*/
+
+
+/*awal reviews*/
+
+.review {
+	color: white;
+	background-color: #252734;
+	border-radius: 10px;
+}
+
+/*akhir reviews*/
