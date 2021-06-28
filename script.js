@@ -1,37 +1,38 @@
-//awal bar navigasi
+// DOM
 const navbar = document.querySelector('.navbar');
 const qa = document.querySelector('.qa');
+const link = document.querySelector('.tema');
+const theme = document.querySelector('select');
+const background = document.querySelector('.background');
 
+
+
+// storage key
+const LSK_setTheme = `local_storage_setTheme`;
+
+
+
+// saat load halaman
+window.addEventListener(`load`, function() {
+	changeTheme(loadData(LSK_setTheme))
+	theme.value = `${loadData(LSK_setTheme)}`
+});
+
+
+
+//awal bar navigasi
 navbar.addEventListener('click', function(event) {
-	// console.log(event.target);
-
 	if(event.target.className == "hammenu"){
 		qa.classList.toggle('show');
 	}
 });
 
 
-// akhir bar navigasi
-
 
 // // ubah tema
-
-const link = document.querySelector('.tema');
-const theme = document.querySelector('select');
-
-const background = document.querySelector('.background');
-
-theme.addEventListener('change', function(event) {
-	// console.log(event.target.value);
-	if(event.target.value == 'Neon') {
-		link.href = 'neonUI.css';
-		background.style.display = 'block';
-	}
-	if(event.target.value == 'Dark') {
-		link.href = 'darkUI.css';
-		background.style.display = 'none';
-	}
+theme.addEventListener('change', function(e) {
+	const target = theme.value;
+	upData(LSK_setTheme,target);
+	changeTheme(loadData(LSK_setTheme));
+	theme.value = `${loadData(LSK_setTheme)}`;
 });
-
-
-// // akhir ubah tema
