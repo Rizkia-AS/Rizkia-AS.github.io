@@ -11,12 +11,12 @@ function loadData(key) {
 
 function changeTheme(target) {
 	if(target == 'Neon') {
-		link.href = 'neonUI.css';
+		link.href = 'assets/css/neonUI.css';
 		background.style.display = 'block';
 	}
 
 	if(target == 'Dark') {
-		link.href = 'darkUI.css';
+		link.href = 'assets/css/darkUI.css';
 		background.style.display = 'none';
 	}
 }
