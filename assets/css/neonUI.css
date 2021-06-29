@@ -28,9 +28,9 @@
 
 	body { background-color: black; }
 
-	.more a { color: #7E7E7E;  transition: 0.15s; }
+	.more a , .back a { color: #7E7E7E;  transition: 0.15s; }
 
-	.more:hover a {
+	.more:hover a, .back:hover a {
 		color: #90DDEB;
 		filter: drop-shadow(0px 0px 9px #01C8EE);
 	}
@@ -60,7 +60,7 @@
 
 
 /*awal navbar*/
-	.navbar{ background-color: rgb(0 0 0); }
+	/*.navbar{ background-color: rgb(0 0 0); }*/
 
 	.logo h3 {
 		color: #FA7EFF;
@@ -166,3 +166,33 @@
 	.bg { display: none; }
 	.bgp { position: fixed;  width: 100%;  z-index: -999; }
 }
+
+
+
+
+
+
+						/*FOR ID PAGE*/
+
+/*awal navbar*/
+	.nav h3 {
+		color: #FA7EFF;
+		filter: drop-shadow(0px 0px 9px #F500FE);
+	}
+/*akhir navbar*/
+
+/*awal detail*/
+	.detail { background-color: rgba(0, 0, 0, 50%); }
+
+	.icon {fill: #7e7e7e; }
+
+	.contact a p {
+		font-family: 'Orbitron', sans-serif;
+		color: #7e7e7e;
+	}
+
+	.contact a:hover p, .contact a:hover .icon {
+		color: #90DDEB;
+		filter: drop-shadow(0px 0px 9px #01C8EE);
+	}	
+/*akhir detail*/

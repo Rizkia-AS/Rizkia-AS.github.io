@@ -20,3 +20,17 @@ function changeTheme(target) {
 		background.style.display = 'none';
 	}
 }
+
+
+
+function changeThemeIdPage(target) {
+	if(target == 'Neon') {
+		link.href = '../assets/css/neonUI.css';
+		background.style.display = 'block';
+	}
+
+	if(target == 'Dark') {
+		link.href = '../assets/css/darkUI.css';
+		background.style.display = 'none';
+	}
+}

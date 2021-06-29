@@ -1,0 +1,155 @@
+/*css reset*/
+
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body { line-height: 1; }
+
+	ol, ul { list-style: none; }
+
+	blockquote, q { quotes: none; }
+
+	blockquote:before, blockquote:after,
+	q:before, q:after { content: '';  content: none; }
+
+	table { border-collapse: collapse;  border-spacing: 0; }
+/*akhir css reset*/
+
+
+
+
+
+/*awal all*/
+	.container { margin-left: 10.17%;  margin-right: 10.17%; }
+
+	.back { margin-top: 30px;  margin-left: 10.17%; }
+
+	p { margin-bottom: 20px; }
+/*akhir all*/
+
+
+
+
+
+/*awal navbar*/
+	.navbar {
+		display: flex;
+		background-color: black;
+		height: 45px;
+		align-items: center;
+	}
+
+	.nav { margin-left: 10.17%;  margin-right: 10.17%; }
+/*akhir navbar*/
+
+
+
+
+
+/*awal main profile*/
+	.mainprofile { height: 334px;  display: flex; }
+
+	.mainprofile .min768 { margin-left: 8.45%;  align-self: center; }
+
+	.min768 { display: block; }
+
+	.max767 { display: none; }
+
+	.mainid {
+		flex-flow: column;
+		align-self: center;
+		margin-left: 16px;
+	}
+/*akhir main profile*/
+
+
+
+
+
+/*awal detail*/
+	.detail {
+		display: flex;
+		height: 314px;
+		justify-content: space-around;
+	}
+
+	.icon { transition: 0.3s; }
+
+	.contact a p {
+		margin-bottom: 0px;
+		align-self: center;
+		transition: 0.3s;
+	}
+
+	.secondary { align-self: center; }
+
+	.contact { align-self: center; }
+
+	.contact a {
+		display: flex;
+		width: 161px;
+		height: 39px;
+		margin-bottom: 20px;
+	}
+/*akhir detail*/
+
+
+
+
+
+/*template*/
+.tempsvg { display: none; }
+
+/*media query*/
+@media all and (max-width: 767px) {
+	.container { margin: 0px auto; }
+
+	.back { margin-top: 20px;  margin-left: 8.6%; }
+
+	.min768 { display: none; }
+
+	.max767 {
+		display: block;
+		margin-left: 8.45%;
+		align-self: center;
+	}
+
+.detail {
+	display: flex;
+	flex-direction: column;
+	height: 464px;
+	align-content: space-around;
+}
+
+.secondary, .contact { align-self: start;  margin-left: 8.6%; }
+
+.contact a { width: 151px; }
+
+}

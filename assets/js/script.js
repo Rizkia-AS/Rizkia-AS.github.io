@@ -15,7 +15,7 @@ const LSK_setTheme = `local_storage_setTheme`;
 // saat load halaman
 window.addEventListener(`load`, function() {
 	changeTheme(loadData(LSK_setTheme))
-	theme.value = `${loadData(LSK_setTheme)}`
+	theme.value = `${loadData(LSK_setTheme) || `Dark`}`
 });
 
 

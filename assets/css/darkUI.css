@@ -19,7 +19,7 @@
 
 	.more { transition: 0.15s; }
 
-	.more a {color: #FFC25C; }
+	.more a, .back a{color: #FFC25C; }
 
 	.more:hover { transform: scale(1.2); }
 
@@ -86,3 +86,31 @@
 	h3{ font-size: 18px; }
 	p{ font-size: 16px; }
 }
+
+
+
+
+
+
+
+					/*FOR ID PAGE*/
+
+/*awal navbar*/
+	.nav h3 { color: #FFF;  font-weight: 600; }
+/*akhir navbar*/
+
+/*awal detail*/
+	.detail {background-color: #252734; }
+
+	.icon { fill: white; }
+
+	.contact a p {
+		font-family: 'Quicksand', sans-serif;
+		font-size: 17px;
+	}
+
+	.contact a:hover p, .contact a:hover .icon {
+		color: #FFC25C;
+		fill: #FFC25C;;
+	}	
+/*akhir detail*/
